@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#">MY PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <h1>Port<span>folio</span></h1>
+        </div>
+        <div class="header-text">
+            
+            <h1>Hi,I'm <span>Kajal</span></h1>
+            <p>This is my official portfolio website <br>to showcase all details and work .</p>
+            <br>
+            <a href="20bph032_Resume.pdf" class="btn btn2">Download CV</a>
+        </div>
+    </div>
+
+    <!-----------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG_20221120_203528.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello!,I'm a final year student persuing my B.Tech degree from NIT Hamirpur 
+                        having deep interest in programming and Web Development.
+                        I have strong foundation in Data Structures and Algorithms and computer fundamentals.
+                        I'm also a front-end web developer creating user-friendly responsive websites having knowledge of popular JavaScript Library React.js.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem solving,DSA</span><br>Languages:C,C++</li>
+                            <li><span>Web Development</span><br>Web Technologies: HTML, CSS, JavaScript,Bootstrap,React</li>
+                            <li><span>DB Language</span><br>SQL</li>
+                            <li><span>Computer Fundamentals</span><br>OOPS, DBMS, OS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>june 2023-july 2023</span><br>Web Development Intern at Oasis Infobyte<br>During my internship at oasis Infobyte, I had the opportunity to work as a Web Development Intern, where I honed my skills in creating  user-friendly web interfaces.<br> Worked on Technologies of HTML, CSS and JavaScript.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Dec 2020-present</span><br>B.Tech from NIT Hamirpur<br>Branch-Engineering Physics(8.62 CGPI)</li>
+                            <li><span>2019</span><br>Class XII<br>Percentage-87</li>
+                            <li><span>2017</span><br>Class X<br>Percentage-81.6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!---------------------------------contact------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-sharp fa-solid fa-paper-plane"></i>kaajalkajal10@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>8252315050</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kajal-kumari-650020203"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/kajaal_05?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Kajal. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
